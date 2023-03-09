@@ -1,0 +1,31 @@
+#hero-section{
+    background-image: url("/img/hero4.png");
+    background-size: cover;
+    background-position: 0 -2.5em;
+    height: calc(100vh - 104px);
+    display: flex;
+    align-items: center;
+}
+
+#hero-section h2{
+    margin: 20px 0 40px;
+}
+
+#hero-section h2 span{
+    color: var(--primary-color);
+}
+
+#hero-section a{
+    display: inline-block;
+    border: none;
+    background-image: url(/img/button.png);
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 15px;
+    padding: 20px 70px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}

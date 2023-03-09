@@ -3,3 +3,9 @@
 
 /* === Global Styling CSS === */
 @import url("global.css");
+
+/* Header CSS */
+@import url("header.css");
+
+/* Home CSS */
+@import url("home.css");

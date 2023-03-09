@@ -7,6 +7,7 @@
 
 :root{
     --heading-color: #222;
+    --primary-color: #088178;
 }
 
 h1{
@@ -16,13 +17,13 @@ h1{
 }
 
 h2{
-    font-size: 46px;
+    font-size: 66px;
     line-height: 54px;
     color: var(--heading-color)
 }
 
 h4{
-    font-size: 20px;
+    font-size: 26px;
     color: var(--heading-color)
 }
 
@@ -30,4 +31,21 @@ h6{
     font-size: 12px;
     font-weight: 700;
     color: var(--heading-color)
+}
+
+p{
+    font-size: 18px;
+    color: #777777;
+}
+
+.section-padding{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 50px;
+    width: 100%;
+}
+
+::selection {
+    color: white;
+    background: var(--primary-color);
 }
