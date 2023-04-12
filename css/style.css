@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
 
 /* === Global Styling CSS === */
-@import url("global.css");
+@import url("/css/global.css");
 
 /* Header CSS */
-@import url("header.css");
+@import url("/css/header.css");
 
 /* Home CSS */
-@import url("home.css");
+@import url("/css/home.css");
