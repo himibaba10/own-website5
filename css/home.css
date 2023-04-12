@@ -96,30 +96,30 @@
     background: #fff2e5;
 }
 
-/* Featured Product Section */
+/* Featured Product & New Arrival Section */
 
-#featured-product-section{
+.product-section{
     margin: 80px auto;
 }
 
-#featured-product-section h2,
-#featured-product-section p{
+.product-section h2,
+.product-section p{
     text-align: center;
 }
 
-#featured-product-section p{
+.product-section p{
     font-size: 1.52em;
     margin-top: 15px;
 }
 
-#featured-product-section .featured-products{
+.product-section .featured-products{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     margin-top: 30px;
 }
 
-#featured-product-section .featured-products .product{
+.product-section .featured-products .product{
     border: 1px solid rgb(209, 209, 209);
     border-radius: 25px;
     box-shadow: 10px 10px 20px rgba(70, 62, 221, 0.1);
@@ -127,19 +127,19 @@
     padding: 10px;
 }
 
-#featured-product-section .product-images{
+.product-section .product-images{
     display: flex;
     grid-column-gap: 10px;
     position: relative;
     margin-left: 0;
 }
 
-#featured-product-section .product-images:hover .product-img{
+.product-section .product-images:hover .product-img{
     margin-left: calc(-100% - 10px);
 }
 
-#featured-product-section .product-img,
-#featured-product-section .product-img-hover{
+.product-section .product-img,
+.product-section .product-img-hover{
     transition: margin 0.2s linear;
     width: 100%;
     height: auto;
@@ -147,35 +147,35 @@
     margin-bottom: 15px;
 }
 
-#featured-product-section .product-category{
+.product-section .product-category{
     font-size: 1.1em;
     color: #777777;
 }
 
-#featured-product-section .product-title{
+.product-section .product-title{
     font-size: 1.2em;
     margin-top: 12px;
     font-weight: 600;
 }
 
-#featured-product-section .more-info{
+.product-section .more-info{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#featured-product-section .star{
+.product-section .star{
     margin: 5px 0 7px;
     color: gold;
 }
 
-#featured-product-section .price{
+.product-section .price{
     font-size: 1.3em;
     font-weight: 500;
     color: green;
 }
 
-#featured-product-section .add-to-cart-btn{
+.product-section .add-to-cart-btn{
     border: none;
     width: 40px;
     height: 40px;
@@ -185,7 +185,7 @@
     transition: all 0.2s linear;
 }
 
-#featured-product-section .add-to-cart-btn:hover{
+.product-section .add-to-cart-btn:hover{
     box-shadow: 0 0 40px rgba(20, 42, 121, 0.2);
     transform: scale(1.1);
 }
@@ -229,4 +229,258 @@
     background: white;
     padding: 3vh 3vw;
     border-radius: 7px;
+}
+
+/* Discount section */
+
+#discount-section .two-col-section,
+#discount-section .three-col-section{
+    display: flex;
+    column-gap: 30px;
+}
+
+#discount-section .two-col-section .left-col,
+#discount-section .two-col-section .right-col{
+    width: 50%;
+    padding: 100px 30px;
+}
+
+#discount-section .two-col-section .left-col{
+    background-image: url("/img/banner/b17.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#discount-section .two-col-section h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+#discount-section .two-col-section h2{
+    color: white;
+    font-size: 2.6em;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+#discount-section .two-col-section p{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#discount-section .two-col-section button{
+    position: relative;
+    font-size: 1.1rem;
+    margin-top: 16px;
+    padding: 11px 25px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#discount-section .two-col-section button .button-text{
+    position: relative;
+    z-index: 2;
+}
+
+#discount-section .two-col-section button .button-overlay{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 0;
+    background-color: var(--primary-color);
+    height: calc(100% + 2px);
+    z-index: 1;
+    transition: all 0.2s linear;
+}
+
+#discount-section .two-col-section button:hover .button-overlay{
+    width: calc(100% + 2px);
+}
+
+#discount-section .two-col-section .right-col{
+    background-image: url("/img/banner/b10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#discount-section .three-col-section{
+    margin-top: 30px;
+}
+
+#discount-section .three-col-section .left-col,
+#discount-section .three-col-section .middle-col,#discount-section .three-col-section .right-col{
+    width: 33.33%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 20px;
+}
+
+#discount-section .three-col-section .left-col{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/img/banner/b7.jpg")
+}
+
+#discount-section .three-col-section .middle-col{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/img/banner/b4.jpg");
+}
+
+#discount-section .three-col-section .right-col{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/img/banner/b18.jpg");
+}
+
+#discount-section .three-col-section h3{
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+}
+
+#discount-section .three-col-section p{
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: orangered;
+}
+
+/* Newsletter section */
+#newsletter-section{
+    margin: 80px 0;
+    background-image: url("/img/banner/b14.png");
+    background-color: #041e42;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    padding: 50px 0;
+}
+
+#newsletter-section .newsletter-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#newsletter-section .left-col,
+#newsletter-section .right-col{
+    width: 50%;
+}
+
+#newsletter-section .left-col h3{
+    color: white;
+    font-size: 2em;
+}
+
+#newsletter-section .left-col p{
+    color: #CCCCCC;
+    margin-top: 20px;
+}
+
+#newsletter-section .right-col form{
+    text-align: end;
+}
+
+#newsletter-section .right-col form input[type="email"]{
+    padding: 15px;
+    width: 350px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#newsletter-section .right-col form input[type="submit"]{
+    font-size: 1em;
+    padding: 15px 35px;
+    margin-left: -4px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Footer section */
+
+footer .footer-first-row{
+    display: flex;
+}
+
+footer .first-col{
+    width: 40%;
+}
+
+footer .first-col img{
+    margin-bottom: 25px;
+}
+
+footer h4{
+    font-size: 1.3em;
+}
+
+footer .first-col .contact-info{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+footer .first-col .contact-info p{
+    font-size: 1.1em;
+    color: #555555;
+}
+
+footer .first-col .contact-info p .contact-title{
+    font-weight: bold;
+}
+
+footer .first-col .social-icons{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+footer .second-col,
+footer .third-col{
+    width: 18%;
+}
+
+footer .links{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+footer .links li + li{
+    margin-top: 10px;
+}
+
+footer .links li a,
+footer p{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #555555;
+}
+
+footer .fourth-col p{
+    margin: 20px 0;
+}
+
+footer .download-images{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+
+footer .download-images img{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+footer #copyright-text{
+    display: block;
+    text-align: center;
+    margin: 40px 0;
+    font-size: 1.1em;
+    color: #555555;
 }
