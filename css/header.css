@@ -61,3 +61,39 @@ header #navbar .active::after{
     width: 25px;
     height: 3px;
 }
+
+/* Mobile Menu */
+
+#mobile-menu,
+#navbar #close-menu {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 767px){
+    #mobile-menu,
+    #navbar #close-menu{
+        display: block;
+    }
+    #navbar{
+        position: absolute;
+        right: -300px;
+        top: 0px;
+        background-color: #EEEEEE;
+        transition: right 0.3s linear;
+    }
+    
+    #navbar.active{
+        right: 0;
+    }
+    
+    header #navbar ul{
+        margin-top: 20px;
+        flex-direction: column;
+        row-gap: 15px;
+        height: 100vh;
+        width: 200px;
+        align-items: flex-start;
+    }
+}

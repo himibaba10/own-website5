@@ -11,3 +11,14 @@ window.addEventListener("scroll", () => {
     }
     // window.scrollY > 100 ? header.classList.add("scroll-effect") : header.classList.remove("scroll-effect");    
 })
+
+const menuOpen = document.getElementById("mobile-menu");
+const menuClose = document.getElementById("close-menu");
+const NavMenu = document.getElementById("navbar");
+menuOpen.addEventListener("click", ()=>{
+    NavMenu.classList.add("active");
+})
+
+menuClose.addEventListener("click", ()=>{
+    NavMenu.classList.remove("active");
+})
