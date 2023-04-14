@@ -169,7 +169,7 @@ header #navbar .active::after {
 /* Hero Section */
 
 #hero-section {
-    background-image: url("/img/hero4.png");
+    background-image: url("../img/hero4.png");
     background-size: cover;
     background-position: 0 -2.5em;
     height: calc(100vh - 104px);
@@ -188,7 +188,7 @@ header #navbar .active::after {
 #hero-section a {
     display: inline-block;
     border: none;
-    background-image: url(/img/button.png);
+    background-image: url(../img/button.png);
     background-size: contain;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -413,7 +413,7 @@ header #navbar .active::after {
 }
 
 #discount-section .two-col-section .left-col {
-    background-image: url("/img/banner/b17.jpg");
+    background-image: url("../img/banner/b17.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -469,7 +469,7 @@ header #navbar .active::after {
 }
 
 #discount-section .two-col-section .right-col {
-    background-image: url("/img/banner/b10.jpg");
+    background-image: url("../img/banner/b10.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -491,17 +491,17 @@ header #navbar .active::after {
 
 #discount-section .three-col-section .left-col {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("/img/banner/b7.jpg")
+        url("../img/banner/b7.jpg")
 }
 
 #discount-section .three-col-section .middle-col {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("/img/banner/b4.jpg");
+        url("../img/banner/b4.jpg");
 }
 
 #discount-section .three-col-section .right-col {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("/img/banner/b18.jpg");
+        url("../img/banner/b18.jpg");
 }
 
 #discount-section .three-col-section h3 {
@@ -519,7 +519,7 @@ header #navbar .active::after {
 /* Newsletter section */
 #newsletter-section {
     margin: 80px 0;
-    background-image: url("/img/banner/b14.png");
+    background-image: url("../img/banner/b14.png");
     background-color: #041e42;
     background-repeat: no-repeat;
     background-position: 20% 30%;
