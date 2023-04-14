@@ -361,7 +361,7 @@ header #navbar .active::after {
 /* Call-to-Action Section */
 
 #call-to-action-section {
-    background: url(/img/banner/b2.jpg);
+    background: url(../img/banner/b2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
